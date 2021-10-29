@@ -2,6 +2,11 @@
 
 ## Introduction
 
+Evergine tutorial that shows how to integrate the Wave Engine editor into an SPA using react
+
+![Editor](./doc/actionPanel.png)
+
+
 TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.
 
 ## Getting Started
