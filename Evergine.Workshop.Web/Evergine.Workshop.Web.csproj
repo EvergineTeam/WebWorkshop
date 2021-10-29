@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PublishTrimmed Condition="'$(Configuration)' == 'Debug'">false</PublishTrimmed>
+    <PublishTrimmed Condition="'$(Configuration)' == 'Release'">true</PublishTrimmed>
+    <BlazorEnableCompression Condition="'$(Configuration)' == 'Debug'">false</BlazorEnableCompression>
+    <!-- <RunAOTCompilation>true</RunAOTCompilation> -->
+    <!-- <AOTMode>LLVMOnly</AOTMode> -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <TrimmerRootDescriptor Include="link-descriptor.xml" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <DefineConstants>WASM</DefineConstants>
+    <GenerateEvergineContent>False</GenerateEvergineContent>
+    <GenerateEvergineAssets>True</GenerateEvergineAssets>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0-rc.1.21452.15 " />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0-rc.1.21452.15 " PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Evergine.Framework" Version="2021.10.8.1-nightly" />
+    <PackageReference Include="Evergine.Targets" Version="2021.10.8.1-nightly" />
+    <PackageReference Include="Evergine.Targets.Web" Version="2021.10.8.1-nightly" />
+    <PackageReference Include="Evergine.Web" Version="2021.10.8.1-nightly" />
+    <PackageReference Include="Evergine.OpenGL" Version="2021.10.8.1-nightly" />
+    <PackageReference Include="Evergine.HLSLEverywhere" Version="2021.10.8.1-nightly" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Evergine.Workshop\Evergine.Workshop.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "@modules/*": ["modules/*"],
+            "@evergine/*": ["evergine/*"],
+            "@stores/*": ["stores/*"],
+            "@hooks/*": ["hooks/*"],
+            "@configuration": ["configuration"]
+        }
+    }
+}

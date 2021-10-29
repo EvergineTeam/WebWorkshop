@@ -1,0 +1,22 @@
+Packages:
+  - Id: Evergine.Core
+    LocalPath: null
+    Version: 2021.10.8.1-nightly
+Profiles:
+  - AdditionalEffectTechniqueCombinations: LOW_PROFILE-SHADOW_SUPPORTED-SHADOWFILTER3, LOW_PROFILE-GAMMA_COLORSPACE-SHADOW_SUPPORTED-SHADOWFILTER3
+    AlphaCompressionFormat: R8G8B8A8_UNorm
+    CompileEffects: true
+    GraphicsBackend: WebGL2
+    LauncherType: Default
+    Name: Web
+    NonAlphaCompressionFormat: R8G8B8A8_UNorm
+    Platform: Web
+  - AdditionalEffectTechniqueCombinations: SHADOW_SUPPORTED-SHADOWFILTER7
+    AlphaCompressionFormat: BC3_UNorm
+    CompileEffects: false
+    GraphicsBackend: DirectX11
+    LauncherType: Default
+    Name: Windows
+    NonAlphaCompressionFormat: BC3_UNorm
+    Platform: Windows
+ResourcesPath: Content
