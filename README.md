@@ -11,18 +11,15 @@ During this session, We will create some basic 3D primitives using the Evergine 
 
 ## Getting Started
 
-### 1. Install Evergine Launcher
-
-- [Installer Evergine](https://waveeditor.blob.core.windows.net/installer/EvergineSetup.exe)
-
-### 2. Install .NET dependencies
+### 1. Install .NET dependencies and Evergine
 
 #### Prerequisites
 
 1. (Optional - Recommended) [Visual Studio 2022](https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=professional&ch=pre&rel=17)
 2. (Required without VS2022) [Download](https://dotnet.microsoft.com/download/dotnet/6.0) latest dotnet SDK release (6.0.0-rc.2)
 3. Install wasm-tools (root terminal): `dotnet workload install wasm-tools --skip-manifest-update`
-4. Deactivate bullet on base project: `Evergine.Workshop/MyScene.cs:L15`,`Evergine.Workshop/Evergine.Workshop.csproj:L16`
+4. Install Evergine Launcher [Installer Evergine](https://waveeditor.blob.core.windows.net/installer/EvergineSetup.exe)
+5. Deactivate bullet on base project: `Evergine.Workshop/MyScene.cs:L15`,`Evergine.Workshop/Evergine.Workshop.csproj:L16`
 
 -------
 
@@ -46,7 +43,7 @@ and run the app by populating the folder `./Evergine.Workshop.Web/bin/[Debug|Rel
 
 ------
 
-### 3. Configure and install web tools
+### 2. Configure and install web tools
 
 #### **Install web tools**
 
@@ -56,13 +53,13 @@ and run the app by populating the folder `./Evergine.Workshop.Web/bin/[Debug|Rel
 
     `npm  -g install yarn`
 
-3. Install project dependencies.
-
-    `yarn install`
-
 #### **Build and run the project**
 
-Go to Evergine.Workshop.React/evergine.client folder and execute the following commands to build the project and run the server using craco.
+Go to Evergine.Workshop.React/evergine.client folder and execute the following commands to install dependencies, build the project and run the server using craco.
+
+Install project dependencies.
+
+    `yarn install`
 
 The following command build our Evergine.Workshop project and will publish all the web webassembly files into the wwwroot/ directory. This task also copies all the content into the public/ folder of our React server.
 
