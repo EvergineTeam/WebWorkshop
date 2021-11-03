@@ -4,7 +4,7 @@
 
 Workshop that shows how to integrate the Evergine into an SPA using react. 
 
-During this session, We will create some basic 3D primitives using the Evergine editor. We will add an Action Panel in our Web project to change the color and scale of our 3D shapes invoking webassembly methods.
+During this session, We will create some basic 3D primitives using the Evergine editor. We will add an Action Panel in a new React Web project to change the size and color of our 3D shapes invoking webassembly methods.
 
 ![Editor](./doc/actionPanel.png)
 
