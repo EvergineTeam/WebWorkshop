@@ -15,7 +15,7 @@ During this session, We will create some basic 3D primitives using the Evergine 
 
 #### Prerequisites
 
-1. (Optional - Recommended) [Visual Studio 2022](https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=professional&ch=pre&rel=17)
+1. Download [Visual Studio 2022](https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=professional&ch=pre&rel=17)
 2. (Required without VS2022) [Download](https://dotnet.microsoft.com/download/dotnet/6.0) latest dotnet SDK release (6.0.0-rc.2)
 3. Install wasm-tools (root terminal): `dotnet workload install wasm-tools --skip-manifest-update`
 4. Install Evergine Launcher [Installer Evergine](https://waveeditor.blob.core.windows.net/installer/EvergineSetup.exe)
@@ -47,7 +47,7 @@ and run the app by populating the folder `./Evergine.Workshop.Web/bin/[Debug|Rel
 
 #### **Install web tools**
 
-1. Install the latest version of nodejs [nodejs](https://nodejs.org/es/download/). it includes npm
+1. Install the latest version of [nodejs](https://nodejs.org/es/download/). it includes npm
 
 2. Install yarn
 
@@ -59,7 +59,7 @@ Go to Evergine.Workshop.React/evergine.client folder and execute the following c
 
 Install project dependencies.
 
-    `yarn install`
+`yarn install`
 
 The following command build our Evergine.Workshop project and will publish all the web webassembly files into the wwwroot/ directory. This task also copies all the content into the public/ folder of our React server.
 

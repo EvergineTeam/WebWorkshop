@@ -43,7 +43,7 @@
     "babel-loader": "8.1.0"
   },
   "scripts": {
-    "build": "craco build",
+    "build": "craco build && npm run build:evergine",
     "start": "craco start",
     "build:evergine": "npm run evergine-build && npm run evergine-publish && npm run evergine-copy",
     "evergine-build": "dotnet build -c Debug ../../Evergine.Workshop.Web/Evergine.Workshop.Web.csproj",
