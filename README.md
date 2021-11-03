@@ -25,7 +25,7 @@ During this session, We will create some basic 3D primitives using the Evergine 
 
 #### Build
 
-Use VS2022 or VSCode/Terminal. You can build and test only the client project (Web), the server is only needed for publishing with compression (see below).
+Use VS2022 or VSCode/Terminal. You can only build and test the client project (Web) if you want, the server is only needed for publishing with compression (see below).
 
 `dotnet build -c [Debug|Release] ./Evergine.Workshop.Web/Evergine.Workshop.Web.[Server.]csproj`
 
@@ -33,7 +33,7 @@ Use VS2022 or VSCode/Terminal. You can build and test only the client project (W
 
 #### Run
 
-From VS2022 you can run the profile `Evergine.Workshop.Web[.Server]`. There is also an IIS Express profile for each cliente and server projects, but it is usually slower.
+From VS2022 you can run the profile `Evergine.Workshop.Web[.Server]`. There is also an IIS Express profile for each client and server projects, but it is usually slower.
 
 Additionally you can publish the app
 
@@ -68,10 +68,6 @@ The following command build our Evergine.Workshop project and will publish all t
 This command launch the web server.
 
 `yarn start`
-
-## Contribute
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops).
 
 ----
 Powered by **[Evergine 3.3 preview](http://www.evergine.net)**
