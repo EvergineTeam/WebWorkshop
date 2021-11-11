@@ -8,16 +8,15 @@ export type EvergineMessage = {
 }
 
 const initializeEvergine = () => {
-
-    const interval = setInterval(() => {
+    
+     const interval = setInterval(() => {
         if(window.areAllAssetsLoaded()){
             useEvergineStore.getState().setWebAssemblyLoaded(true);
-            clearInterval(interval)
+            clearInterval(interval);
+            window.Module['locateFile'] = (base: string) =>
+            `${process.env.PUBLIC_URL}/evergine/${base}`;
         }
     }, 500);
-
-    window.Module['locateFile'] = (base: string) =>
-        `${process.env.PUBLIC_URL}/evergine/${base}`;
 
     window.App = {
         onEntitySelected: (message: string) => {

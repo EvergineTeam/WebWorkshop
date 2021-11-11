@@ -16,7 +16,7 @@ During this session, We will create some basic 3D primitives using the Evergine 
 #### Prerequisites
 
 1. Download [Visual Studio 2022](https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=professional&ch=pre&rel=17)
-2. (Required without VS2022) [Download](https://dotnet.microsoft.com/download/dotnet/6.0) latest dotnet SDK release (6.0.0-rc.2)
+2. (Required without VS2022) [Download](https://dotnet.microsoft.com/download/dotnet/6.0) latest dotnet SDK release (6.0.0)
 3. Install wasm-tools (root terminal): `dotnet workload install wasm-tools --skip-manifest-update`
 4. Install Evergine Launcher [Installer Evergine](https://waveeditor.blob.core.windows.net/installer/EvergineSetup.exe)
 5. Deactivate bullet on base project: `Evergine.Workshop/MyScene.cs:L15`,`Evergine.Workshop/Evergine.Workshop.csproj:L16`

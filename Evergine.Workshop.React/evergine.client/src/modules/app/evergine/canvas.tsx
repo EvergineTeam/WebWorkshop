@@ -94,9 +94,8 @@ const EvergineCanvas = memo(
                             height: `${size.height}px`,
                             width: `${size.width}px`
                         }}
-                        onContextMenu={(ev: any) => {
-                            console.log(ev);
-                            return false;
+                        onContextMenu={(ev: React.SyntheticEvent) => {
+                            ev.preventDefault();
                         }}
                         tabIndex={1}
                     />
