@@ -8,6 +8,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+evergine.js
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

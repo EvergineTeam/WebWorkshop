@@ -25,14 +25,6 @@
       </div>
     </div>
 
-    <!-- We first configure javascript wave functions on evergine.js-->
-    <script type="text/javascript">
-      App.configure(
-        "evergine-canvas",
-        "Evergine.Workshop.Web",
-        "Evergine.Workshop.Web.Program"
-      );
-    </script>
 
     <!-- Then we load web assembly code -->
     <script src="_framework/blazor.webassembly.js"></script>
@@ -40,14 +32,21 @@
     <script src="assets.js"></script>
     <!-- Finally, run wave when all assets are loaded -->
     <script type="text/javascript">
-      function waitAndRun() {
-        if (areAllAssetsLoaded()) {
-          console.log("Running...");
-          App.run();
-        } else {
-          setTimeout(waitAndRun, 100);
+
+        var Module = typeof Module !== "undefined" ? new EvergineModule(Module) : new EvergineModule();
+        var app = new App(
+            "evergine-canvas",
+            "Evergine.Workshop.Web",
+            "Evergine.Workshop.Web.Program",
+            Module);
+        function waitAndRun() {
+            if (areAllAssetsLoaded()) {
+                console.log("Running...");
+                app.run();
+            } else {
+                setTimeout(waitAndRun, 100);
+            }
         }
-      }
 
       waitAndRun();
     </script>
